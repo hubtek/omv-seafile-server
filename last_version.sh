@@ -3,7 +3,8 @@
 # Author : Sébastien HUBER
 
 # Log version
-# 2015 : new release for omg 1.9 and new seafile version 4
+# 2015 : 
+#     V.1.0-05 : new release for omv 1.9 and new seafile version 4py
 #  2013/09 :
 #    V.1.0-00 :   430 lignes qui fonctionnent
 #    V.1.0-01 :   Amélioration de l'affichage des "echo" au client
@@ -253,7 +254,7 @@ uninstall_package() {
 loading_simulation
   apt-get -fyqq update
    loading_simulation
-  apt-get -fyqq remove python 2.7 python-setuptools python-simplejson python-imaging sqlite3
+  apt-get -fyqq remove python2.7 python-setuptools python-simplejson python-imaging sqlite3
   loading_simulation
   apt-get -fyqq autoremove
   apt-get -fyqq clean
@@ -272,7 +273,7 @@ install_package() {
     echo ""
   echo "Download and installation in progress ... (1/3)"
   loading_simulation
-  apt-get -fyqq install python 2.7 
+  apt-get -fyqq install python2.7 
   loading_simulation
   sleep 5
   loading_simulation
